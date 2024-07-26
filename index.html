@@ -7,7 +7,7 @@
     <title>Sushmita Portfolio</title>
     <style>
         body {
-            background-color: rgb(10, 0, 23);
+            background-color: rgb(4, 1, 9);
             color: white;
         }
 
@@ -48,6 +48,13 @@
             font-size: 1.3rem;
         }
 
+        main hr {
+            border: 0;
+            background: #7d4ab7;
+            height: 1.2px;
+            margin: 60px 60px;
+        }
+
         .left {
             font-size: 1.5rem;
         }
@@ -55,36 +62,83 @@
         .firstSection {
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            text-align: center;
+            margin: 125px 0;
         }
 
         .firstSection div {
-            width: 30%;
+            width: 28%;
         }
 
         .leftSection {
 
             /* background-color: red; */
-            margin: 30px;
-            font-size: 3rem;
+            top: 180px;
+            font-size: 4.1rem;
             text-align: center;
         }
 
         .rightSection img {
             /* background-color: red; */
-            width: 120%;
-            margin: 50px 0;
+            width:auto;
+        
         }
 
         .purple {
             color: rgb(174, 90, 252);
         }
-        #element{
+
+        .textGray {
+            color: gray;
+        }
+
+        #element {
             color: rgb(174, 90, 252);
         }
-        .secondSection{
-            max-width: 80vw;
+
+        .secondSection {
+            max-width: 90vw;
             margin: auto;
+            height: 50vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 185vh;
+            height: 2px;
+            margin: 56px 10;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 2px 113px;
+
+
+        }
+
+        .secondSection .vertical-title {
+            position: relative;
+            top: 7px;
+            text-align: center;
+            width: 150px;
+
+        }
+
+        .secondSection .vertical-text {
+            position: relative;
+            top: 10px;
+            color: gray;
+            width: 150px;
+            font-size: 15px;
+            text-align: center;
+
         }
     </style>
 </head>
@@ -108,10 +162,12 @@
     </header>
     <main>
         <section class="firstSection">
-            <div class="leftSection"> Hi, My name is
-                <span class="purple">Sushmita</span>
+            <div class="leftSection"> Hey! I'm
+                <br>
+                <span class="purple">Sushmita Kumari Mahato</span>
+                <br>
                 and I'm a passionate
-
+                <br>
                 <span id="element"></span>
             </div>
 
@@ -119,7 +175,36 @@
         </section>
         <hr>
         <section class="secondSection">
-<h1>Past Experience</h1>
+            <span class="textGray">What I have done so far</span>
+            <h1>My Knowledge</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">Frontend Tech</div>
+                    <div class="vertical-text">Basic understanding of Html, Css, Javascript</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Learn from College</div>
+                    <div class="vertical-text">C Programming <br> Python Programming <br> Operating system </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Learn from Youtube</div>
+                    <div class="vertical-text"> Basic Knowledge Java</div>
+                </div>
+
+                <div class="vertical">
+                    <div class="vertical-title">Self Learning</div>
+                    <div class="vertical-text">Problem solving + Leetcode</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Version Controls</div>
+                    <div class="vertical-text">Basic Knowledge of Git</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title"></div>
+                    <div class="vertical-text"></div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
