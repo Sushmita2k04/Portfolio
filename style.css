@@ -47,7 +47,7 @@ main hr {
 }
 
 .left {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
 }
 
 .firstSection {
@@ -320,4 +320,28 @@ footer {
 .footer-bottom p {
     margin: 0;
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        /* color: blue; */
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+    .box{
+        flex-direction:column ;
+    }
+    .secondSection{
+        flex-direction: column;
+        
+    }
+
+    .secondSection .vertical{
+        height: auto;
+    }
+    .secondSection .box{
+        
+    }
+  
 }
