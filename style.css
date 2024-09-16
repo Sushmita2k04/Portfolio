@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: rgb(31, 25, 65);
     color: white;
 }
@@ -40,10 +40,84 @@ nav ul li a:hover {
 }
 
 main hr {
-    /* border: 1px wheat; */
+    border: 1px wheat;
     background: #7d4ab7;
     height: auto;
     margin: 70px 70px;
+}*/
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    /* background-color: #040826; */
+    background-color: #0f211c;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+}
+
+/* Navigation Bar */
+.navbar {
+    /* background: #070f49; */
+    background-color: #489c86;
+    color: #fff;
+    padding: 10px 0;
+    /* height: 70px; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .bar {
+    display: block;
+    width: 1px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fff;
 }
 
 .left {
@@ -51,6 +125,7 @@ main hr {
 }
 
 .firstSection {
+   
     display: flex;
     justify-content: space-around;
     margin: 20px 0.9px;
@@ -71,7 +146,8 @@ main hr {
 }
 .leftSection .btn{
     padding: 12px;
-    background-color:  rgb(31, 25, 65);
+    /* background-color: #050a30; */
+    background-color: #1b3c33;
     color: white;
     border: 2px solid white;
     border-radius: 6px;
@@ -88,6 +164,7 @@ main hr {
 }
 
 .profile-section {
+    margin-top: 30vh;
     text-align: center;
     margin: 40px 10px;
     padding: 10px;
@@ -95,6 +172,7 @@ main hr {
 }
 
 .profile-picture {
+    margin-top: 20vh;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -120,7 +198,7 @@ hr {
 }
 
 .purple {
-    color: rgb(174, 90, 252);
+    color:#23e2ac;
 }
 
 .textGray {
@@ -128,27 +206,36 @@ hr {
 }
 
 #element {
-    color: rgb(174, 90, 252);
+    color:#2fa082;
 }
 
 .education-section {
-    background-color:rgb(51, 42, 106);
+    text-align: center;
+     background-color:#1b3c33;
     padding: 20px;
     border-radius: 10px;
-    /* margin: 20px 0; */
     margin: 56px 60px;
-    box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1);
+    box-shadow: 0 4px 8px rgba(41, 204, 147, 0.1);
 }
 
 .education-section h2 {
     text-align: center;
-    color: white;
+    color: #fffdfd;
     margin-bottom: 20px;
 }
-
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .education-item {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 15px;
+    background-color:#326d5d;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(36, 152, 100, 0.1);
 }
 
 .education-item:last-child {
@@ -156,22 +243,23 @@ hr {
 }
 
 .education-item h3 {
-    margin: 0;
-    color: white;
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
 }
 
 .education-item .institution {
     font-style: normal;
-    color: rgb(213, 211, 211);
+    color: rgb(230, 228, 228);
 
 }
 
 .education-item .duration {
-    color: rgb(133, 130, 130);
+    color: rgb(214, 210, 210);
 }
 
 .education-item .details {
-    color: rgb(81, 81, 81);
+    color: rgb(197, 196, 196);
     margin-top: 5px;
 }
 
@@ -220,11 +308,11 @@ hr {
 
 }
 .skills-section {
-    background-color:rgb(51, 42, 106);
+    background-color:#1b3c33;
     padding: 20px;
     border-radius: 10px;
     margin: 56px 60px;
-    box-shadow: 0 4px 8px rgba(215, 102, 227, 0.1);
+    box-shadow: 0 4px 8px rgba(102, 225, 227, 0.1);
 }
 
 .skills-section h2 {
@@ -235,6 +323,7 @@ hr {
 
 .skills-container {
     display: flex;
+    background-color: #26574a;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -244,9 +333,9 @@ hr {
     min-width: 200px;
     margin: 10px;
     padding: 15px;
-    background-color:rgb(51, 42, 106);
+    background-color:#327362;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(168, 90, 246, 0.1);
+    box-shadow: 0 2px 4px rgba(90, 241, 246, 0.1);
 }
 
 .skill-item h3 {
@@ -258,21 +347,75 @@ hr {
 .skill-item ul {
     list-style-type: none;
     padding: 0;
-    box-shadow: #e576f8;
+
+    box-shadow: white;
 }
 
 .skill-item ul li {
-    background-color:rgb(51, 42, 106);
+    background-color:r#326f5f;
     margin: 5px 0;
     padding: 10px;
-    border-radius: 5px ;
+    border-radius: 10px ;
+    justify-content: space-between;
     text-align: center;
-    color: #c5b8b8;
-    box-shadow: #a6539b;
+    color: white;
+    box-shadow: #59f7ef;
+}
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #1b3c33;
+    color: #fff;
+    text-align: center;
 }
 
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact input:focus, 
+.contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4e4caf;
+}
+
+.contact button.btn {
+    background-color: #4cafa2;
+    /*width: 100%;
+    outline: white;
+    padding: 12px 20px;
+    border-radius: 5px; */
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button.btn:hover {
+    background-color: #63eec0;
+}
+
+
 footer {
-    background-color: rgb(51, 48, 69);
+    background-color:#1b3c33;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -307,7 +450,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: rgb(134, 113, 255);
+    color: #9bfae1;
     text-decoration: none;
 }
 

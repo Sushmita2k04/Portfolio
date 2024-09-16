@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushmita Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
 </head>
 
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <div class="left">
                 Sushmita's Portfolio
             </div>
@@ -24,17 +27,37 @@
                     <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
+        </nav> -->
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Portfolio</h1>
+                <ul class="nav-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <div class="profile-section">
-        <img src="SKM.jpeg" alt="Your Name" class="profile-picture">
-        <h2>Sushmita Kumari Mahto</h2>
-        <p>Data Science Student | Aspiring Developer | Problem Solver</p>
-    </div>
-    <hr>
     <main>
-        <section class="firstSection">
+        <section>
+            <div id="Home" class="profile-section">
+                <img src="SKM.jpeg" alt="Your Name" class="profile-picture">
+                <h2>Sushmita Kumari Mahto</h2>
+                <p>Data Science Student | Aspiring Developer | Problem Solver</p>
+            </div>
+            <hr>
+        </section>
+        <section id="About" class="firstSection">
             <div class="leftSection"> Hey! I'm
                 <br>
                 <span class="purple">Sushmita Kumari Mahato</span>
@@ -44,30 +67,38 @@
                 <span id="element"></span>
                 <div class="button">
                     <button class="btn">Download Resume</button>
-                    <button class="btn">Download Resume</button>
+                    <button class="btn">View Resume</button>
                 </div>
             </div>
 
             <div class="rightSection"><img src="developerPNG.webp" alt="Error"></div>
         </section>
-        <section class="education-section">
+        <section id="Education" class="education-section">
             <h2>Education</h2>
-            <div class="education-item">
-                <h3>B.Tech </h3>
-                <p class="institution">MCKV Institute Of Engineering</p>
-                <p class="duration">2022 - 2026</p>
-                <p class="details">Computer Science Engineering in Data Science</p>
-            </div>
-            <div class="education-item">
-                <h3>High School </h3>
-                <p class="institution">St. Denis School</p>
-                <p class="duration">2020 - 2022</p>
-                <p class="details">I'm PCM student</p>
-            </div>
+            <section class="education-container">
+                <div class="education-item">
+                    <h3>Secondary School </h3>
+                    <p class="institution">Sohanlal Deoralia Balika Vidyalaya</p>
+                    <p class="duration">2009 - 2020</p>
+                    <p class="details">All subject West Bengal Board</p>
+                </div>
+                <div class="education-item">
+                    <h3>High School </h3>
+                    <p class="institution">St. Denis School</p>
+                    <p class="duration">2020 - 2022</p>
+                    <p class="details">Physics ,Chemistry ,Mathematics student</p>
+                </div>
+                <div class="education-item">
+                    <h3>B.Tech </h3>
+                    <p class="institution">MCKV Institute Of Engineering</p>
+                    <p class="duration">2022 - 2026</p>
+                    <p class="details">Computer Science Engineering in Data Science</p>
+                </div>
+            </section>
         </section>
 
         <hr>
-        <section class="secondSection">
+        <section id="Projects" class="secondSection">
             <span class="textGray">What I have done so far</span>
             <h1>My Knowledge</h1>
 
@@ -97,7 +128,7 @@
 
         </section>
         </div>
-        <section class="skills-section">
+        <section id="Skills" class="skills-section">
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skill-item">
@@ -126,6 +157,20 @@
                 </div>
             </div>
         </section>
+        <!-- Contact Section -->
+    <section id="Contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email / LinkedIn Id / Instagram Id" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <br>
+    <script src="script.js"></script>
 
     </main>
     <footer>
@@ -163,7 +208,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Java learner', 'web developer'],
+            strings: ['Java learner ', 'web developer ','Data Science '],
             typeSpeed: 50,
         });
     </script>
